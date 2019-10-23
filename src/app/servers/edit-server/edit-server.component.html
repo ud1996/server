@@ -1,0 +1,21 @@
+<p>edit-server works!</p>
+<div class="row" *ngIf="!allowEdit else info">
+    <div class="col-12"> 
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="textbox" class="form-control" name="name" [(ngModel)]="serverName">
+        </div>
+        <div class="form-group">
+            <label for="status">Status</label>
+            <select name="status" id="status" class="form-control" [(ngModel)]="serverStatus">
+                <option value="offline">Offline</option>
+                <option value="online">Online</option>
+            </select>
+        </div>
+        <button class="btn btn-primary" (click)="onUpdateServer()">Edit</button>
+    </div>
+</div>
+
+<ng-template #info>
+    this is not allowed to edit
+</ng-template>

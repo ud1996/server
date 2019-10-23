@@ -1,0 +1,7 @@
+[
+    {"id":1,"name":"test Server","status":"offline"},
+    {"id":2,"name":"user Server","status":"online"},
+    {"id":3,"name":"unknown Server","status":"online"}
+
+]
+
